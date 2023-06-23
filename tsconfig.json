@@ -13,6 +13,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"],
+    },
 
     /* Linting */
     "strict": true,
@@ -22,7 +25,8 @@
   },
   "include": [
     ".eslintrc.cjs",
-    "src"
+    "src",
+    "vite.config.ts",
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
